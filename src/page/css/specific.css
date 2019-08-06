@@ -1,0 +1,131 @@
+/*新增-覆盖旧CSS*/
+.nav ul,
+.nav ul li,
+.nav ul li a,
+.nav ul li a span {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.nav ul li,
+.nav ul li a,
+.nav ul li a span {
+	width: 100%;
+}
+
+nav li .submenu,
+nav li .submenu li{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/*display: inline-block;*/
+	text-align: center;
+	width: 100%;
+}
+
+.submenu{
+	display: none;
+}
+
+/*导航栏里的<a>设置display:block*/
+
+div.nav {
+	float: left;	/*不能继承*/
+	margin-right: 5%;		
+	width: 90%;
+	background: #6483d8;
+}
+div.nav * {
+	width: 100%;	/*不能继承*/
+}
+
+
+div.nav ul li a{	
+	display: block;		
+}
+
+div.nav ul li a span {
+	padding-left: 2%;
+}
+
+
+
+ul.prework li {
+	padding-bottom: 1em;
+}
+div.papers li{
+	list-style-type: decimal;
+	padding-bottom: 1em;	
+}
+
+.nodot li{
+	list-style-type: none;
+}
+
+.inline > p{
+	margin-top: 1em;
+	margin-bottom: 0;
+}
+
+.float-right{
+	float: right;
+	margin-left: 0.5em;
+}
+
+.clear-float{
+	clear: both;
+}
+
+#sub-logimg {
+	display: none;
+}
+
+/*图像集处理*/
+div.theme-title, div.theme-title *{
+	margin: 0;
+	padding: 0;
+}
+div.theme-title {
+	margin-bottom: 1em;
+}
+
+/*酒店图像*/
+#xiangyu-img, #shiwai-img {
+	width: 35%;
+}
+
+
+/* 页脚 底部 */
+#bottom{
+	width: 100%;
+	font-weight:600;
+	font-size:12px;
+	background-color:#FBFBFB;
+	/*margin-top:25px;	
+	padding-bottom:25px;*/
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+/* li#springerlogo */
+#springerlogo {
+    width: 15%;
+}
+
+footer{
+	width: 100%;
+	height: 15px;
+	/*position: absolute;
+	margin-top:25px;*/
+	padding:15px 0 27px 0;
+	background: #BCBCBC;
+	color:#666;
+	text-align: center;
+}
+
+
+.home table{
+	border: 1px solid #8A8A8A;
+	padding-left:3%;
+}
