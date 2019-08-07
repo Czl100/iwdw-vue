@@ -16,4 +16,10 @@ export default {
 </script>
 
 <style>
+.bottom-wrap {
+  overflow: hidden;
+  width: 1349px;
+  height: 190px;
+  border-top: solid 2px #bcbcbc;
+}
 </style>

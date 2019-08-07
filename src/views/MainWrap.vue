@@ -1,9 +1,7 @@
 <template>
   <div class="main-wrap">
-    <div class="table-row">
-      <Nav />
-      <ConteneWrap />
-    </div>
+    <Nav />
+    <ConteneWrap />
   </div>
 </template>
 
@@ -21,10 +19,7 @@ export default {
 
 <style lang='less' scoped>
 .main-wrap {
-  display: table;
+  overflow: hidden;
   width: 100%;
-  .table-row {
-    display: table-row;
-  }
 }
 </style>

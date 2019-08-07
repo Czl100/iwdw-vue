@@ -9,12 +9,8 @@ export default {};
 </script>
 
 <style lang='less' scoped>
-content-wrap h1 h2{
-	display:inline;	
-}
-
-content-wrap {
-	display:table-cell; 
-	vertical-align: top;
+.content-wrap {
+  float: right;
+  width: 815px;
 }
 </style>

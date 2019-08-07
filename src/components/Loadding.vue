@@ -145,9 +145,7 @@ export default {};
 }
 
 @-webkit-keyframes sk-circleFadeDelay {
-  0%,
-  39%,
-  100% {
+  0%,39%,100% {
     opacity: 0;
   }
   40% {

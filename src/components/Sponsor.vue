@@ -45,11 +45,9 @@ export default {};
   }
   li {
     display: inline-block;
-    list-style-type: none;
-    /* padding-right: 5em; */
     width: 12%;
+    list-style-type: none;
   }
-
   img {
     width: 100%;
   }

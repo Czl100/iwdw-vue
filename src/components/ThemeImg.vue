@@ -54,34 +54,34 @@ export default {
   width: 100%;
   height: auto;
   cursor: pointer;
+  .head-img, .head-img img{
+    width: 100%;
+  }
   .logo {
-    width: 70%;
-    // height: 300px;
-    height: calc(30%);
     float: left;
     position: relative;
+
+    // width: 70%;height: calc(30%);
+    width: 731px;
+    height: 314px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
   }
+  /* .logo {
+    aspect-ratio: '24:1';
+  } */
   .slider {
     overflow: hidden;
-    width: 30%;
-    // height: 300px;
-    // height: calc(25%);
-    height: 10rem;
-    background-color: #c6f;
     position: relative;
     float: right;
+
+    width: 314px;
+    height: 314px;
     img {
       width: 100%;
     }
   }
-}
-
-.head-img, .head-img img{
-	width: 100%;
-}
- 
-.logo img{
-	width: 100%;
-	height: 100%;
 }
 </style>
