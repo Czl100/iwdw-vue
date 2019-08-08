@@ -24,6 +24,13 @@ export default {
     ThemeImg,
     MainWrap,
     BottomWrap
+  },
+  metaInfo: {
+    title: 'vue-iwdw',
+    meta: [
+      {name: 'keywords', content: 'IWDW2019, IWDW 2019, iwdw, 2019, meeting'},
+      {name: 'description', content: 'IWDW2019, IWDW, 2019, IWDW 2019,meeting'}
+    ]
   }
 };
 </script>

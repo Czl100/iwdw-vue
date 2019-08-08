@@ -1,5 +1,5 @@
 // 这三项一定要有，因为下面 configureWebpack 中用到了
-const PrerenderSPAPlugin = require('prerender-spa-plugin');
+const PrerenderSPAPlugin = require('./node_modules/prerender-spa-plugin');
 const Renderer = PrerenderSPAPlugin.PuppeteerRenderer;
 const path = require('path');
 
@@ -8,7 +8,7 @@ module.exports = {
 
   // 预渲染关键配置  
   configureWebpack: () => {
-    if (process.env.NODE_ENV === 'production') return;
+    if (process.env.NODE_ENV !== 'production') return;
     return {
       plugins: [
         new PrerenderSPAPlugin({
