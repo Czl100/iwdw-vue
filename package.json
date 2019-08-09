@@ -26,7 +26,6 @@
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
     "postcss-px-to-viewport": "^1.1.1",
-    "prerender-spa-plugin": "^3.4.0",
     "vue-template-compiler": "^2.6.10"
   }
 }
