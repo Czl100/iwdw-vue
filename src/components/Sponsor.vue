@@ -27,7 +27,7 @@
           <img src="@/assets/images/springer.png" title="Springer" />
         </a>
       </li>
-      <li style="display:inline-block;width:100%;height:0"></li>
+      <!-- <li style="display:inline-block;width:100%;height:0"></li> -->
     </ul>
   </div>
 </template>
@@ -37,19 +37,29 @@ export default {};
 </script>
 
 <style lang='less' scoped>
-.sponsor-wrap {
+.sponsor-wrap {  
   padding: 0 20%;
   background-color: #fff;
+  box-sizing: border-box;
+  overflow: hidden;
   > ul {
-    text-align: justify;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   li {
     display: inline-block;
+    // flex: 1 1 auto;
     width: 12%;
     list-style-type: none;
   }
   img {
     width: 100%;
   }
+}
+#springerlogo {
+  width: 14%;
 }
 </style>

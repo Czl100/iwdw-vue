@@ -1,8 +1,7 @@
 <template>
   <div class="content-home">
     <div class="textbox">
-      <h2>Introduction</h2>
-      <hr class="line" />
+      <h2 class='novw'>Introduction</h2>
       <div class="text indentation">
         <p>
           The 18th International Workshop on Digital-forensics and Watermarking (IWDW 2019) will be held in Chengdu, China from 2-4 November, 2019.
@@ -20,8 +19,7 @@
     </div>
 
     <div class="textbox">
-      <h2>Important Dates</h2>
-      <hr class="line" />
+      <h2 class='novw'>Important Dates</h2>
       <div class="text" style="padding-left: 2em">
         <p style="margin-top:0.5em; margin-bottom: 0">
           Paper Submissions:
@@ -48,12 +46,9 @@
     </div>
 
     <div class="textbox">
-      <h2>Areas of Interest</h2>
-      <hr class="line" />
+      <h2 class='novw'>Areas of Interest</h2>
       <div class="text">
-        <p
-          style="margin-top: 0%; margin-bottom: 0%; font-weight: bold; font-size: initial"
-        >The topics include, but not limited to</p>
+        <p style="margin-top: 0%; margin-bottom: 0%; font-weight: bold; font-size: initial">The topics include, but not limited to</p>
         <ul style="padding-left:3em">
           <li>Authentication, Copyright protection, DRM, and forensic watermarking</li>
           <li>Channel coding techniques for watermarking</li>
@@ -77,7 +72,7 @@
     </div>
 
     <div class="textbox">
-      <h2>Contact Information</h2>
+      <h2 class='novw'>Contact Information</h2>
       <div class="text">
         <table>
           <tr>
@@ -106,12 +101,21 @@
 export default {};
 </script>
 
-<style>
+<style lang='less' scoped>
 .content-home {
   width: 100%;
   padding-left: 25px;
 }
 .content-home h1 h2{
 	display:inline;
+}
+h2.novw {
+  margin: 0;
+  padding: 0;
+  border-bottom: solid 2px blue;
+  margin-bottom: 15px;
+}
+h2 {
+  font-size: 21px;
 }
 </style>

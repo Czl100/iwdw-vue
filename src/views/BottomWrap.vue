@@ -1,7 +1,7 @@
 <template>
   <div class='bottom-wrap'>
     <Sponsor />
-    <footer></footer>
+    <footer class="footer novw"><span>Copyright(c) IWDW 2019 Conference committees. All rights reserved.</span></footer>
   </div>
 </template>
 
@@ -15,11 +15,22 @@ export default {
 };
 </script>
 
-<style>
+<style lang='less' scoped>
 .bottom-wrap {
   overflow: hidden;
   width: 1349px;
-  height: 190px;
   border-top: solid 2px #bcbcbc;
+}
+.footer {
+  position: relative;
+  height: 57px;
+  background-color: #bcbcbc;
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 </style>

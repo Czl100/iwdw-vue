@@ -50,10 +50,12 @@ html, body {
   background: #fff;
   font-family: Tahoma, Geneva, sans-serif;
   font-size: 16px;
+  box-sizing: border-box;
 }
 
 .top-main {
   width: 1045px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 </style>

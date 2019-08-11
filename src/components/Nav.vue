@@ -3,18 +3,18 @@
   <!-- <router-link to="/about">About</router-link> -->
   <div class="nav-wrap">    
       <ul class="nav">
-        <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/committee">Program Committee</router-link></li>
-        <li><router-link to="/speakers">Invited Speakers</router-link></li>
-        <li><router-link to="/submission">Submission</router-link></li>
-        <li><router-link to="/sessions">Special Sessions</router-link></li>
-        <li><router-link to="/papers">List of Accepted Papers</router-link></li>
-        <li><router-link to="/registration">Registration</router-link></li>
-        <li><router-link to="/program">Technical Program</router-link></li>        
-        <li><router-link to="/venue">Venue & Accommodation</router-link></li>
-        <li><router-link to="/sightseeing">Sightseeing</router-link></li>
-        <li><router-link to="/workshops">Previous Workshops</router-link></li>
-      </ul>    
+        <router-link tag="li" to="/"><span>Home</span></router-link>
+        <router-link tag="li" to="/committee"><span>Program Committee</span></router-link>
+        <router-link tag="li" to="/speakers"><span>Invited Speakers</span></router-link>
+        <router-link tag="li" to="/submission"><span>Submission</span></router-link>
+        <router-link tag="li" to="/sessions"><span>Special Sessions</span></router-link>
+        <router-link tag="li" to="/papers"><span>List of Accepted Papers</span></router-link>
+        <router-link tag="li" to="/registration"><span>Registration</span></router-link>
+        <router-link tag="li" to="/program"><span>Technical Program</span></router-link>        
+        <router-link tag="li" to="/venue"><span>Venue & Accommodation</span></router-link>
+        <router-link tag="li" to="/sightseeing"><span>Sightseeing</span></router-link>
+        <router-link tag="li" to="/workshops"><span>Previous Workshops</span></router-link>
+      </ul>
   </div>
 </template>
 
@@ -26,6 +26,7 @@ export default {};
 li {
   list-style-type: none;
   height: 49px;
+  cursor: pointer;
 }
 .nav-wrap {
   float: left;
@@ -34,9 +35,22 @@ li {
   background-color: #6483d8;
   .nav {
     margin: 0;
-    padding-left: 3px;
-    width: 100%;    
-    font-size: 20px;
+    width: 100%;
+    padding-left: 0;    
+    box-sizing: border-box;
+    font-size: 16px;
+    span {
+      padding-left: 3px;
+      vertical-align: middle;
+      line-height: 49px;
+      color: #fff;
+    }
+    a {
+      text-decoration: none;
+    }
   }  
+}
+.router-link-exact-active {
+  background-color: #2828ab;
 }
 </style>
