@@ -3,7 +3,7 @@
     <ul class="slider-img">
       <!-- <li><img src="@/assets/images/xm.jpg" title="Sight" /></li> -->
       <li v-for="(img,ind) in imgList" :key="ind">
-        <img :src="img" title="Sight" />
+        <img :src="img" title="Sight" v-show='ind==curId'/>
       </li>
     </ul>
     <div class="switcher" @mouseover='mouseoverHandle'>     
@@ -19,7 +19,7 @@ export default {
   name: "slideImage",
   data: ()=>{
     return {
-      curId: 1,
+      curId: 2,
       
     }
   },
@@ -31,7 +31,6 @@ export default {
   },
   computed: {
     imgNum(){
-      console.dir(this.imgList[1]);
       return this.imgList.length;
     }
   },

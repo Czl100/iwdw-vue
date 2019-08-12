@@ -31,7 +31,7 @@ export default {
       imgList: [
         require('@/assets/images/xm.jpg'),
         require('@/assets/images/1.jpg'),
-        import('@/assets/images/2.jpg')
+        require('@/assets/images/2.jpg')
       ]
     }
   }
