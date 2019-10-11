@@ -1,5 +1,15 @@
-// 这三项一定要有，因为下面 configureWebpack 中用到了
-const PrerenderSPAPlugin = require('./node_modules/prerender-spa-plugin');
+module.exports = {
+  lintOnSave: false,
+  configureWebpack: {
+	  devtool: 'source-map'
+  }
+}
+
+/**
+ * 带预渲染的配置
+ *  */
+
+/* const PrerenderSPAPlugin = require('./node_modules/prerender-spa-plugin');
 const Renderer = PrerenderSPAPlugin.PuppeteerRenderer;
 const path = require('path');
 
@@ -33,4 +43,4 @@ module.exports = {
       ]
     };
   }
-}
+} */

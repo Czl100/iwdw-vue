@@ -43,7 +43,6 @@ export default {
   overflow: hidden;
   margin-bottom: 1em;
   width: 100%;
-  height: auto;
   cursor: pointer;
   .head-img, .head-img img{
     width: 100%;
